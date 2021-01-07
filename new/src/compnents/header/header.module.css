@@ -1,0 +1,59 @@
+header{
+    z-index: 6;
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+
+header h1{
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+header img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.about{
+    height: 100vh;
+}
+
+.about img{
+    opacity: 1;
+}
+
+.about_header{
+    z-index: 1;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.about_header p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.header_button{
+    background-color: var(--index1);
+    padding: 13px 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+}

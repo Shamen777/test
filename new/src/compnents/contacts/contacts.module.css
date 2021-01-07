@@ -1,0 +1,54 @@
+.contacts_block{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contacts_block_card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.contacts_block_card img{
+    width: 64px;
+    height: 64px;
+}
+
+.line{
+    height: 50vh;
+    width: 2px;
+    background-color: #cacaca;
+}
+
+.contacts_block_card h5{
+    color: #333;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts_block_card p {
+    color: gray;
+}
+
+.contacts_block_card a, .direction {
+    color: var(--index1);
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.map_container{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 50px;
+}
+
+.marker h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}

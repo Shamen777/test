@@ -1,0 +1,47 @@
+footer{
+    display: flex;
+    padding: 10% 10%;
+    height: 70vh;
+    color: #222;
+}
+
+.contact_number{
+    min-width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_number li{
+    margin-top: 10px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.adress_email{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+
+.adress{
+    margin-bottom: 60px;
+}
+
+.social{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social img{
+    width: 64px;
+    height: 64px;
+}
+
+.social img + img{
+    margin-left: 30px;
+}
