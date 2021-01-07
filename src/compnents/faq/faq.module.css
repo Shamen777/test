@@ -1,0 +1,51 @@
+.faq_container{
+    margin-top: 30px;
+}
+
+.faq{
+    border: 1px solid var(--brown);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.faq div:nth-child(1){
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    transition: ease-out 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.active_accordion{
+    background: black;
+    color: red;
+}
+
+.panel {
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: var(--card_bg);
+    border-radius: 10px;
+}
+
+.panel p{
+    font-size: 17px;
+    line-height: 25px;
+    margin: 10px 0px;
+}
+
+
+@media screen and (max-width: 900px){
+    .faq div:nth-child(1){
+        font-size: 18px;
+    }
+    
+    .panel p{
+        font-size: 14px;
+    }
+}

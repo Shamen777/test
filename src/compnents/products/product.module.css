@@ -1,0 +1,100 @@
+.product_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left_container{
+    width: 40%;
+    position: sticky;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_container{
+    width: 60%;
+    padding: 30px;
+}
+
+.right_container h3{
+    font-size: 30px;
+}
+
+.right_container h5{
+    font-size: 15px;
+    color: var(--card_bg);
+    margin: 10px 40% 40px 0px;
+    text-transform: uppercase;
+}
+
+.right_container p{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.left_container img{
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.contact_btn,
+.go_back_btn{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 15px 30px;
+    border-radius: 7px;
+    background: var(--green_light);
+    color: var(--brown);
+    border: 1px solid var(--green);
+    transition: ease-out 0.3s;
+}
+
+.go_back_btn{
+    background: var(--blue_light);
+    border: 1px solid var(--blue);
+}
+
+.contact_btn:hover{
+    background: var(--green);
+}
+.go_back_btn:hover{
+    background: var(--blue);
+}
+
+@media screen and (max-width: 900px){
+    .left_container,
+    .right_container{
+        width: 100%;
+        position: static;
+    }
+    .left_container img{
+        height: auto;
+        width: 60%;
+        max-width: 100%;
+    }
+    .right_container{
+        padding: 10px;
+    }
+
+    .right_container h3{
+        font-size: 25px;
+    }
+    .right_container h5{
+        font-size: 13px;
+        margin: 10px 10px 40px 0px;
+    }
+
+    .right_container p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .contact_btn,
+    .go_back_btn{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}

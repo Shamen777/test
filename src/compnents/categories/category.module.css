@@ -1,0 +1,136 @@
+.active_category{
+    background: var(--green_light);
+    transition: ease-out 0.2s;
+    color: var(--brown);
+}
+
+.filter_elems .filter_elem:first-child h3{
+    color: var(--brown);
+    background: var(--green_light);
+    transition: ease-out 0.2s;
+}
+
+.all_products{
+    color: var(--font);
+    background: none!important;
+}
+
+.panel{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+}
+
+.filter_elems{
+    width: calc(100% - 300px);
+}
+
+.panel input{
+    width: 250px;
+    border: 1px solid var(--font);
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.filter_elem{
+    display: inline-block;
+    margin: 0px 5px 5px 0px;
+    border: 1px solid var(--font);
+    color: var(--font);
+    font-size: 13px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.filter_elem h3{
+    padding: 5px;
+    font-weight: 100;
+}
+
+
+.products{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.product{
+    margin: 0px 15px 15px 0px;
+    width: 250px;
+    border: 1px solid var(--card_bg);
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+  }
+
+.product::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: var(--green_light);
+    z-index: -1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateY(100%);
+    transition: ease-out 0.5s;
+}
+
+.product:hover::after{
+    transform: translateY(0);
+}
+
+.product h3{
+    color: var(--brown);
+    font-weight: 500;
+    font-size: 17px;
+}
+  
+.product p{
+    color: var(--font);
+    margin-top: 5px;
+    font-size: 12px;
+}
+  
+.product .img_container{
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.product img{
+    height: 100%;
+    width: auto;
+}
+
+
+@media screen and (max-width: 900px){
+    .panel{
+        flex-direction: column;
+    }
+    .filter_elems{
+        width: 100%;
+    }
+    .filter_elem{
+        font-size: 10px;
+    }
+    .product{
+        width: 100%;
+        margin: 10px;
+    }
+    .panel input{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+.callBtn{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.call{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--green_light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.networks a img,
+.call img{
+    width: 60%;
+}
+    
+.callBlock{
+    position: relative;
+}
+    
+    
+.networks a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content:center;
+    transition: ease-out 0.3s;
+    align-items: center;
+    position:absolute;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    z-index: 0;
+    background: var(--green);
+}
+    
+.networks a:nth-child(1){
+    transition-delay: 0.1s
+}
+    
+.networks a:nth-child(2){
+    transition-delay: 0.2s
+}
+.networks a:nth-child(3){
+    transition-delay: 0.3s
+}
+    
+.networks_active a:nth-child(1){
+    transform: translate(-200%, 0%)
+}
+    
+.networks_active a:nth-child(2){
+    transform: translate(-150%, -150%)
+}
+.networks_active a:nth-child(3){
+    transform: translate(0%, -200%)
+}
+
+@media screen and (max-width: 900px){
+    .callBtn {
+        bottom: 30px;
+        right: 30px;
+    }
+}

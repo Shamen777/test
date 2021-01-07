@@ -1,0 +1,69 @@
+
+.feedback_section{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--card_bg);
+    padding: 100px 20px;
+}
+
+.feedback_section form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.feedback_section .right_container,
+.feedback_section .left_container{
+    width: 50%;
+}
+
+.feedback_section textarea,
+.feedback_section input{
+    width: calc(100% - 50px);
+    max-width: 500px;
+    height: 50px;
+    border: 2px solid var(--card_bg);
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.feedback_section textarea:focus,
+.feedback_section input:focus{
+    border-color: var(--green_light);
+    background: var(--card_bg);
+}
+
+.feedback_section textarea{
+    height: 120px;
+}
+
+.feedback_section button{
+    padding: 15px 40px;
+    margin-top: 30px;
+    border-radius: 7px;
+    border: 1px solid var(--green);
+    background: var(--green_light);
+    color: var(--brown);
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.feedback_section button:hover{
+    background: var(--green);
+    border-color: var(--green_light);
+}
+
+
+
+@media screen and (max-width: 900px){
+    .feedback_section form{
+        justify-content: center;
+    }
+    .feedback_section .right_container,
+    .feedback_section .left_container,
+    .feedback_section input,
+    .feedback_section textarea{
+        max-width: 100%;
+        width: 100%;
+    }
+    
+}
